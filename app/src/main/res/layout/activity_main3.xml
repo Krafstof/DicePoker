@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="выход" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Соперник" />
+
+    <Button
+        android:id="@+id/rulesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="правила" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/O1Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:maxWidth="40dp"
+            android:src="@drawable/dice_one"
+            android:visibility="invisible"
+            android:maxHeight="40dp"
+            android:layout_margin="10dp"
+            /><ImageView
+        android:id="@+id/O2Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_margin="10dp"
+        android:maxWidth="40dp"
+        android:src="@drawable/dice_one"
+        android:visibility="invisible"
+        android:maxHeight="40dp"
+        />
+        <ImageView
+        android:id="@+id/O3Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_margin="10dp"
+        android:scaleType="fitCenter"
+        android:maxWidth="40dp"
+        android:src="@drawable/dice_one"
+        android:visibility="invisible"
+        android:maxHeight="40dp"
+        /><ImageView
+        android:id="@+id/O4Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:maxWidth="40dp"
+        android:src="@drawable/dice_one"
+        android:visibility="invisible"
+        android:maxHeight="40dp"
+        /><ImageView
+        android:id="@+id/O5Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_margin="10dp"
+        android:scaleType="fitCenter"
+        android:maxWidth="40dp"
+        android:src="@drawable/dice_one"
+        android:visibility="invisible"
+        android:maxHeight="40dp"
+        />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/enemyCombinationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="75dp"
+        android:layout_height="wrap_content"
+        android:textSize="72sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:gravity="center"
+        android:text="Вы" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/D1Image"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:maxWidth="40dp"
+                android:src="@drawable/dice_one"
+                android:visibility="invisible"
+                android:maxHeight="40dp"
+                 />
+
+
+            <ImageView
+                android:id="@+id/С1Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_margin="10dp"
+                android:scaleType="fitCenter"
+                android:maxWidth="40dp"
+                android:src="@drawable/dice_indicator"
+                android:visibility="invisible"
+                android:maxHeight="40dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/D2Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_margin="10dp"
+                android:scaleType="fitCenter"
+                android:maxWidth="40dp"
+                android:maxHeight="40dp"
+                android:src="@drawable/dice_indicator"
+                android:visibility="invisible"
+                />
+            <ImageView
+                android:id="@+id/С2Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_margin="10dp"
+                android:scaleType="fitCenter"
+                android:maxWidth="40dp"
+                android:src="@drawable/dice_indicator"
+                android:visibility="invisible"
+                android:maxHeight="40dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/D3Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:maxWidth="40dp"
+                android:maxHeight="40dp"
+                android:src="@drawable/dice_one"
+                android:visibility="invisible"
+                />
+            <ImageView
+                android:id="@+id/С3Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_margin="10dp"
+                android:scaleType="fitCenter"
+                android:maxWidth="40dp"
+                android:src="@drawable/dice_indicator"
+                android:visibility="invisible"
+                android:maxHeight="40dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/D4Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_margin="10dp"
+                android:maxWidth="40dp"
+                android:maxHeight="40dp"
+                android:src="@drawable/dice_one"
+                android:visibility="invisible"
+                />
+            <ImageView
+                android:id="@+id/С4Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_margin="10dp"
+                android:scaleType="fitCenter"
+                android:maxWidth="40dp"
+                android:src="@drawable/dice_indicator"
+                android:visibility="invisible"
+                android:maxHeight="40dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/D5Image"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:maxWidth="40dp"
+                android:maxHeight="40dp"
+                android:src="@drawable/dice_one"
+                android:visibility="invisible"
+                />
+            <ImageView
+                android:id="@+id/С5Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_margin="10dp"
+                android:scaleType="fitCenter"
+                android:maxWidth="40dp"
+                android:src="@drawable/dice_indicator"
+                android:visibility="invisible"
+                android:maxHeight="40dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/userCombinationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:text=""/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <Button
+        android:id="@+id/button"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="бросок" />
+
+    <Button
+        android:id="@+id/rethrow"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="переброс" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
